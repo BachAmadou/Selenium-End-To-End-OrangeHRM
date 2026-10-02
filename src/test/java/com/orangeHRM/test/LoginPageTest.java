@@ -30,7 +30,7 @@ public class LoginPageTest extends BaseClass {
 	@Test
 	public void invalidLoginTest() {
 		loginPage.login("admin", "admin");
-		String expectedErrorMsg = "Invalid credentials5";
+		String expectedErrorMsg = "Invalid credentials";
 		Assert.assertTrue(loginPage.verifyErrorMessage(expectedErrorMsg), "Test Failed Invalid Error Message");
 	}
 
